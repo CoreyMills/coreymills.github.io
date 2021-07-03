@@ -12,21 +12,33 @@
 	</head>
 	
 	<body>
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+		<script src = "NavMenu.js"> </script>
 		<script src = "TopScript.js" > </script>
 		
 		<header>
 			<h1> Corey Mills - Portfolio </h1>
-			<div id = "mainNav">
-				<nav>
-					<ul>
-						<li> <a class = "button" href = "index.html"> About Me </a> </li>
-						<li> <a class = "button" href = "Education_Page.html"> Education Projects </a> </li>
-						<li> <a class = "button" href = "GameJam_Page.html" > Game Jam Projects </a> </li>
-						<li> <a class = "button" href = "Personal_Page.html" > Personal Projects </a> </li>
-						<li> <a class = "button" href = "Contact_Page.html" > Contact </a> </li>
-					</ul>
-				</nav>
-			</div>
+			<nav>
+				<div id = "mainNav">
+						<ul>
+							<li> <a id = "currentPage" class = "button" href = "index.html"> About Me </a> </li>
+							<li> <a class = "button" href = "Education_Page.html"> Education Projects </a> </li>
+							<li> <a class = "button" href = "GameJam_Page.html" > Game Jam Projects </a> </li>
+							<li> <a class = "button" href = "Personal_Page.html" > Personal Projects </a> </li>
+							<li> <a class = "button" href = "Contact_Page.html" > Contact </a> </li>
+						</ul>
+					</div>
+				<div id = "ddNav" class = "dropDown">
+					<h2 class = "dropDownBtn"> &#8801 </h2>
+					<div = class = "dropDownContent">
+						<a id = "currentPage" class = "button" href = "index.html"> About Me </a>
+						<a class = "button" href = "Education_Page.html"> Education Projects </a>
+						<a class = "button" href = "GameJam_Page.html" > Game Jam Projects </a>
+						<a class = "button" href = "Personal_Page.html" > Personal Projects </a>
+						<a class = "button" href = "Contact_Page.html" > Contact </a>
+					</div>
+				</div>
+			</nav>
 		</header>
 		
 		<main>
