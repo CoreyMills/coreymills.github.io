@@ -18,12 +18,13 @@ document.onreadystatechange=function(){
 		}
 		let videos = document.getElementsByTagName("video");
 		for(let i=0;i<videos.length;i++){videos[i].muted=true;videos[i].controls=true;videos[i].loop=true;videos[i].pause();}
-		window.scrollTo(0, 10);
+		TestVisibility();
 	}
 }
 function ChangeSlide(n,key){
 	slideMap.set(key,slideMap.get(key)+n);
 	ShowSlides(slideMap.get(key),key);
+	TestVisibility();
 }
 function ShowSlides(index,key){
 	let slides=document.getElementsByClassName(key);
@@ -32,13 +33,11 @@ function ShowSlides(index,key){
 	for(let i=0;i<slides.length;i++){slides[i].style.display = "none";}
 	slides[slideMap.get(key)].style.display = "block";
 }
-function PlayVid(vid){setTimeout(function(){vid.play();},1000);}
-$(window).scroll(function(){
-	//alert("test");
+$(window).scroll(function(){TestVisibility();});
+function TestVisibility(){
 	$('video').each(function(){
-		//alert($(this).visible(true));
-		//alert($(this).is("visible"));
-		if($(this).visible(true)){PlayVid($(this)[0]);} 
+		if($(this).visible(true)&&$(this).is(":visible")){PlayVid($(this)[0]);} 
 		else {if(document.pictureInPictureElement!=$(this)[0]){$(this)[0].pause();}}
 	});
-});
+}
+function PlayVid(vid){setTimeout(function(){vid.play();},1000);}
