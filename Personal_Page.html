@@ -1,92 +1,59 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel = "stylesheet" href = "styles.css" />
-		<meta charset = "UTF-8">
-		<meta name = "description" content = "Corey Mills' portfolio site">
-		<meta name = "author" content = "Corey Mills">
-		<meta name = "keywords" content = "Corey Mills, Portfolio, Programmer, Computer Games Programmer">
-		<meta name = "viewport" content = "width = device-width, initial-scale=1.0">
-
-		<title> Corey Mills - Portfolio </title>
+		<link rel="stylesheet"href="styles.css"/>
+		<meta charset="UTF-8">
+		<meta name="description"content="Portfolio website">
+		<meta name="author"content="Corey Mills">
+		<meta name="keywords"content="Corey Mills,Portfolio,Programmer,Computer Games Programmer">
+		<meta name="viewport"content="width=device-width,initial-scale=1.0">
+		<title>Corey Mills - Portfolio</title>
 	</head>
-	
 	<body>
 		<header>
-			<h1> Personal Projects </h1>
+			<h1>Personal Projects</h1>
 			<nav>
-				<div id = "mainNav">
+				<div id="mainNav">
 					<ul>
-						<li> <a class = "button" href = "index.html"> About Me </a> </li>
-						<li> <a class = "button" href = "Education_Page.html"> Education Projects </a> </li>
-						<li> <a class = "button" href = "GameJam_Page.html" > Game Jam Projects </a> </li>
-						<li> <a id = "currentPage" class = "button" href = "Personal_Page.html" > Personal Projects </a> </li>
-						<li> <a class = "button" href = "Contact_Page.html" > Contact </a> </li>
+						<li><a class="button"href="index.html">About Me</a></li>
+						<li><a class="button"href="Education_Page.html">Education Projects</a></li>
+						<li><a class="button"href="GameJam_Page.html">Game Jam Projects</a></li>
+						<li><a id="currentPage"class="button"href="Personal_Page.html">Personal Projects</a></li>
+						<li><a class="button"href="Contact_Page.html">Contact</a></li>
 					</ul>
 				</div>
-				
-				<div id = "ddNav" class = "dropDown">
-					<h2 class = "dropDownBtn"> &#8801 </h2>
-					<div = class = "dropDownContent">
-						<a class = "button" href = "index.html"> About Me </a>
-						<a class = "button" href = "Education_Page.html"> Education Projects </a>
-						<a class = "button" href = "GameJam_Page.html" > Game Jam Projects </a>
-						<a class = "button" href = "Contact_Page.html" > Contact </a>
+				<div id="ddNav"class="dropDown">
+					<h2 class="dropDownBtn">&#8801 </h2>
+					<div class="dropDownContent">
+						<a class="button"href="index.html">About Me</a>
+						<a class="button"href="Education_Page.html">Education Projects</a>
+						<a class="button"href="GameJam_Page.html">Game Jam Projects</a>
+						<a class="button"href="Contact_Page.html">Contact</a>
 					</div>
 				</div>
 			</nav>
-			
-			<div id = "mainNav">
-				<nav>
-					<ul>
-						<li> <a class = "button" href = "index.html"> About Me </a> </li>
-						<li> <a class = "button" href = "Education_Page.html"> Education Projects </a> </li>
-						<li> <a class = "button" href = "GameJam_Page.html" > Game Jam Projects </a> </li>
-						<li> <a id = "currentPage" class = "button" href = "Personal_Page.html" > Personal Projects </a> </li>
-						<li> <a class = "button" href = "Contact_Page.html" > Contact </a> </li>
-					</ul>
-				</nav>
-			</div>
 		</header>
-		
 		<main>
-			<div class = "sec">
-				<div> <h2> Search for a Star 2021 </h2> </div>
-				<div class = "flexContainer">
-					<div class = "col">
-						<p> 
-							A game created for "Search for a Star 2021" using the Unity engine. <br> <br>
-							<a class = "externalLink" href = "https://silent-lunatic.itch.io/chosen-demise"> (Project Submission) </a>
-						</p>
-						
-						<p id = "smt0" class = "showMoreText">
-							Text Here
-						</p>
-						
-						<div class = "ShowMoreBtn">
-							<a class = "button" onclick = "ShowMoreInfo('smt0', this)"> Show More 
-							</a>
-						</div>
+			<div class="sec">
+				<div><h2>Search for a Star 2021</h2></div>
+				<div class="flexContainer">
+					<div class="col">
+						<p>A game created for "Search for a Star 2021" using the Unity engine.<br><br><a class="externalLink"href="https://silent-lunatic.itch.io/chosen-demise">(Project Submission)</a></p>
+						<p id="smt0"class="showMoreText">Text Here</p>						
+						<div class="ShowMoreBtn"><a class="button"onclick="ShowMoreInfo('smt0',this)">Show More</a></div>
 					</div>
-					
 					<div class="col ssContainer">
-						<div class = "ss0">
-							<video src = "Media/ChosenDemise.mp4" type = "video/mp4" width = 100%> Video Not Found </video>
-						</div>
+						<div class="ss0"><video src="Media/ChosenDemise.mp4"autoplay>Video Not Found</video></div>
 					</div>
 				</div>
 			</div>
 		</main>
-		
-		<footer>
-			<p> Copyright &#169; Corey Mills 2021 </p>
-		</footer>
+		<footer><p>Copyright &#169; Corey Mills 2021</p></footer>
 	</body>
 </html>
-
-<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
-<script src = "NavMenu.js"> </script>
-<script src = "jquery.visible.min.js"> </script>
-<script src = "SlideShow.js"> </script>
-<script src = "MoreInfo.js"> </script>
-<script src = "TopScript.js"> </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="NavMenu.js"></script>
+<script src="jquery.visible.min.js"></script>
+<script src="SlideShow.js"></script>
+<script src="MoreInfo.js"></script>
+<script src="TopScript.js"></script>
