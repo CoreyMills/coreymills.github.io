@@ -1,209 +1,211 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
 
-* {
-	box-sizing: border-box;
-	font-family: Raleway;
+*{
+	box-sizing:border-box;
+	font-family:Raleway;
 }
 
-a {
-	text-decoration: none;
+a{
+	text-decoration:none;
 }
 
-p, li, h3, h2 {
-	text-align: left;
+p,li,h3,h2{
+	text-align:left;
 	padding: 0 20px;
 }
 
-html {
-	background-color: #161616;
-	color: #FF8C00;
+html{
+	background-color:#161616;
+	color:#FF8C00;
 }
 
-header {
-	background-color: #232323;
-	text-align: center;
-	font-size: 1.1em;
-	font-weight: lighter;
-	border-bottom: 2px solid #FF8C00;
-	position: fixed;
-	top: 0;
-	right: 0;
-	min-width: 100%;
-	z-index: 5;
+header{
+	background-color:#232323;
+	text-align:center;
+	font-size:1.1em;
+	font-weight:lighter;
+	border-bottom:2px solid #FF8C00;
+	position:fixed;
+	top:0;
+	right:0;
+	min-width:100%;
+	z-index:5;
 }
 
-main {
-	background-color: #161616;
-	margin: 160px 12% 70px 12%;
+main{
+	background-color:#161616;
+	margin:160px 12% 70px 12%;
 }
 
-footer {
-	background-color: #232323;
-	position: fixed;
-	bottom: 0;
-	right: 0;
-	min-width: 100%;
+footer{
+	background-color:#232323;
+	position:fixed;
+	bottom:0;
+	right:0;
+	min-width:100%;
 }
 
-footer > p {
-	text-align: center;
+footer>p{
+	text-align:center;
 }
 
-#mainNav li {
-	display: inline-block;
-	position: relative;
-	padding: 0 2%;
-	margin: 0 0.5%;
+#mainNav li{
+	display:inline-block;
+	position:relative;
+	padding:0 2%;
+	margin:0 0.5%;
 }
 
-#mainNav li > #currentPage {
-	color: #FF8C00;
-	pointer-events: none;
+#mainNav li>#currentPage{
+	color:#FF8C00;
+	pointer-events:none;
 }
 
-#ddNav {
-	display: none;
+#ddNav{
+	display:none;
 }
 
-.dropDownBtn {
-	border: none;
-	margin: 0;
+.dropDownBtn{
+	border:none;
+	margin:0;
 }
 
-.dropDown {
-	position: relative;
-	display: inline-block;
+.dropDown{
+	position:relative;
+	display:inline-block;
 }
 
-.dropDown:hover .dropDownContent {
-	display: block;
+.dropDown:hover.dropDownContent{
+	display:block;
 }
 
-.dropDownContent {
-	background-color: #232323;
-	display: none;
-	position: absolute;
-	min-width: 160px;
-	z-index: 6;
+.dropDownContent{
+	background-color:#232323;
+	display:none;
+	position:absolute;
+	min-width:160px;
+	z-index:6;
 }
 
 .dropDownContent a{
-	display: block;
+	display:block;
 }
 
-.sec {
-	background-color: #232323;
-	margin: 3% 0.5%;
-	padding: 0.5%;
-	text-align: center;
-	outline-style: solid;
-	outline-color: #FFFFFF;
-	outline-width: 1px;
-	min-width: 310px;
+.sec{
+	background-color:#232323;
+	margin:3% 0.5%;
+	padding:0.5%;
+	text-align:center;
+	outline-style:solid;
+	outline-color:#FFFFFF;
+	outline-width:1px;
+	min-width:310px;
 }
 
-.flexContainer {
-	display: flex;
-	flex-wrap: wrap;
+.flexContainer{
+	display:flex;
+	flex-wrap:wrap;
 }
 
-.flexContainer > div {
-	max-width: 100%;
-	margin: auto;
+.flexContainer>div{
+	max-width:100%;
+	margin:auto;
 }
 
-.flexContainer > .evenCol {
-	flex: 1;
-	width: max-content;
-	min-width: 300px;
+.flexContainer>.evenCol{
+	flex:1;
+	width:max-content;
+	min-width:300px;
 }	
 
-.flexContainer > .col {
-	width: min-content;
-	min-width: 300px;
+.flexContainer>.col{
+	width:min-content;
+	min-width:300px;
 }
 
-.ssContainer {
-	flex: 2 1 auto;
-	width: max-content;
-	position: relative;
-	display: none;
+.ssContainer{
+	flex:2 1 auto;
+	width:max-content;
+	position:relative;
+	display:none;
 }
 
-.ssContainer > div >  video, .ssContainer > div > img {
-	min-width: 300px;
-	height: 565px;
+.ssContainer>div>video,.ssContainer>div>img,.ssContainer>div>iframe{
+	min-width:300px;
+	width:100%;
+	height:565px;
+	border-width:0px;
 }
 
 .button{
-	background-color: rgba(22, 22, 22, 0);
-	text-align: center;
-	z-index: 2;
-	color: #FFFFFF;
-	cursor: pointer;
-	font-size: 18px;
-	font-weight: bold;
-	transition: 0.8s ease;
-	user-select: none;
-	padding: .5em;
-	border: 2px solid rgba(0, 0, 0, 0);
+	background-color:rgba(22,22,22,0);
+	text-align:center;
+	z-index:2;
+	color:#FFFFFF;
+	cursor:pointer;
+	font-size:18px;
+	font-weight:bold;
+	transition:0.8s ease;
+	user-select:none;
+	padding:.5em;
+	border:2px solid rgba(0, 0, 0, 0);
 }
 
 .button:hover{
-	color: #FF8C00;
-	background-color: #ddd;
-	border: 2px solid #FFFFFF;
+	color:#FF8C00;
+	background-color:#ddd;
+	border:2px solid #FFFFFF;
 }
 
-.prev, .next{
-	position: absolute;
-	top: 50%;
-	padding: 1.5%;
-	margin-top: -22px;
-	font-size: 24px;
+.prev,.next{
+	position:absolute;
+	top:50%;
+	padding:1.5%;
+	margin-top:-22px;
+	font-size:24px;
 }
 
-.prev {
-	left: 0;
+.prev{
+	left:0;
 }
 
-.next {
-	right: 0;
+.next{
+	right:0;
 }
 
-#tpBtn {
-	background-color: #232323;
-	display: none;
-	position: fixed;
-	bottom: 80%;
-	right: 1%;
-	width: 80px;
-	height: 50px;
-	padding-top: 12px;
-	z-index: 10;
+#tpBtn{
+	background-color:#232323;
+	display:none;
+	position:fixed;
+	bottom:80%;
+	right:1%;
+	width:80px;
+	height:50px;
+	padding-top:12px;
+	z-index:10;
 }
 
-.githubProjectLink {
-	cursor: pointer;
+.githubProjectLink{
+	cursor:pointer;
 }
 
-.githubProjectLink > img {
-	position: absolute;
-	padding: 0 10px;
-	width: 50px;
+.githubProjectLink>img{
+	position:absolute;
+	padding:0 10px;
+	width:50px;
 }
 
-.githubProjectLink > img.hover {
-	background-color: #FF8C00;
+.githubProjectLink>img.hover{
+	background-color:#FF8C00;
 }
 
-.externalLink {
-	color: #FFFFFF;
-	font-size: 1.2em;
+.externalLink{
+	color:#FFFFFF;
+	font-size:1.2em;
 }
 
-.showMoreText {
-	display: none;
-	border-top: 2px solid #FF8C00;
-	padding-top: .5em;
+.showMoreText{
+	display:none;
+	border-top:2px solid #FF8C00;
+	padding-top:.5em;
 }

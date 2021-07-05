@@ -18,13 +18,13 @@ document.onreadystatechange=function(){
 		}
 		let videos = document.getElementsByTagName("video");
 		for(let i=0;i<videos.length;i++){videos[i].muted=true;videos[i].controls=true;videos[i].loop=true;videos[i].pause();}
-		TestVisibility();
+		CheckVisibility();
 	}
 }
 function ChangeSlide(n,key){
 	slideMap.set(key,slideMap.get(key)+n);
 	ShowSlides(slideMap.get(key),key);
-	TestVisibility();
+	CheckVisibility();
 }
 function ShowSlides(index,key){
 	let slides=document.getElementsByClassName(key);
@@ -33,11 +33,23 @@ function ShowSlides(index,key){
 	for(let i=0;i<slides.length;i++){slides[i].style.display = "none";}
 	slides[slideMap.get(key)].style.display = "block";
 }
-$(window).scroll(function(){TestVisibility();});
-function TestVisibility(){
+$(window).scroll(function(){CheckVisibility();});
+function CheckVisibility(){
 	$('video').each(function(){
-		if($(this).visible(true)&&$(this).is(":visible")){PlayVid($(this)[0]);} 
-		else {if(document.pictureInPictureElement!=$(this)[0]){$(this)[0].pause();}}
+		if(IsVisible($(this)[0])){PlayVideo($(this)[0]);} 
+		else {if(document.pictureInPictureElement!=$(this)[0]){PauseVideo($(this)[0]);}}
+	});
+	$('iframe').each(function(){
+		if(IsVisible($(this)[0])){PlayIFrame($(this)[0]);}
+		else{PauseIFrame($(this)[0]);}
 	});
 }
-function PlayVid(vid){setTimeout(function(){vid.play();},1000);}
+let windowH=$(window).height();let headerH=$('header').height();let footerH=$('footer').height();
+function IsVisible(vid){
+	let rectInfo=vid.getBoundingClientRect();let percentH=rectInfo.height*0.2;
+	return(rectInfo.width!=0&&rectInfo.top+percentH>headerH&&rectInfo.bottom-percentH<(windowH-footerH))?true:false;
+}
+function PlayVideo(vid){setTimeout(function(){vid.play();},200);}
+function PauseVideo(vid){vid.pause();}
+function PlayIFrame(vid){setTimeout(function(){vid.contentWindow.postMessage('{"event":"command","func":"'+'playVideo'+'","args":""}','*');},200);}
+function PauseIFrame(vid){vid.contentWindow.postMessage('{"event":"command","func":"'+'pauseVideo'+'","args":""}','*');}
