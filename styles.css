@@ -74,10 +74,10 @@ footer>p{
 	position:relative;
 	display:inline-block;
 }
-/*
+
 .dropDown:hover.dropDownContent{
 	display:block;
-}*/
+}
 
 .dropDownContent{
 	background-color:#232323;
@@ -100,6 +100,7 @@ footer>p{
 	outline-color:#FFFFFF;
 	outline-width:1px;
 	min-width:310px;
+	overflow:hidden;
 }
 
 .flexContainer{
@@ -130,10 +131,11 @@ footer>p{
 	display:none;
 }
 
-.ssContainer>div>video,.ssContainer>div>img,.ssContainer>div>iframe{
+.ssContainer>div>video,.ssContainer>div>iframe,.ssContainer>div>img{
+	min-height:300px;
 	min-width:300px;
 	width:100%;
-	height:565px;
+	height:50vh;
 	border-width:0px;
 }
 
