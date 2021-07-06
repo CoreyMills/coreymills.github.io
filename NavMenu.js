@@ -10,6 +10,6 @@ function UpdateNav(){
 	if($(window).width()<1100){$('#mainNav').hide();$('#ddNav').show();} 
 	else {$('#mainNav').show();$('#ddNav').hide();}
 }
-$('dropDownContent').bind('touchstart', function() {});
+$('dropDownBtn').bind('touchstart', function() {});
 
 //function FlipDropDownState(val){if(val == true){$('.dropDownContent')[0].style.display="block";}else{alert("test");$('.dropDownContent')[0].style.display="none";}}
