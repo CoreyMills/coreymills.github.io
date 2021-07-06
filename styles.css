@@ -74,10 +74,10 @@ footer>p{
 	position:relative;
 	display:inline-block;
 }
-
+/*
 .dropDown:hover.dropDownContent{
 	display:block;
-}
+}*/
 
 .dropDownContent{
 	background-color:#232323;
