@@ -75,7 +75,7 @@ footer>p{
 	display:inline-block;
 }
 
-.dropDown:hover.dropDownContent{
+.dropDown:hover .dropDownContent{
 	display:block;
 }
 
