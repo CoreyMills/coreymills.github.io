@@ -16,7 +16,7 @@ document.onreadystatechange=function(){
 			ShowSlides(slideMap.get(key), key);
 			containers[i].style.display = "block";
 		}
-		$('video').each(function(){$(this)[0].muted=true;$(this)[0].controls=true;$(this)[0].loop=true;$(this)[0].preload="none";});
+		$('video').each(function(){$(this)[0].muted=true;$(this)[0].controls=true;$(this)[0].loop=true;$(this)[0].preload="none";$(this)[0].attr('webkit-playsinline', '');});
 		CheckVisibility();
 	}
 }
