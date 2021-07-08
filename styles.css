@@ -10,6 +10,7 @@ a{
 }
 
 p,li,h3,h2{
+	vertical-align:text-top;
 	text-align:left;
 	padding: 0 20px;
 }
@@ -109,13 +110,14 @@ footer>p{
 
 .flexContainer>div{
 	max-width:100%;
-	margin:auto;
+	margin:0;
 }
 
 .flexContainer>.evenCol{
 	flex:1;
 	width:max-content;
 	min-width:300px;
+	margin:0;
 }	
 
 .flexContainer>.col{
@@ -139,6 +141,7 @@ footer>p{
 }
 
 .button{
+	position:relative;
 	background-color:rgba(22,22,22,0);
 	text-align:center;
 	z-index:2;
@@ -203,7 +206,6 @@ footer>p{
 	color:#FFFFFF;
 	font-size:1.2em;
 }
-
 .showMoreText{
 	display:none;
 	border-top:2px solid #FF8C00;
