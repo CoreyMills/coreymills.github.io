@@ -61,8 +61,13 @@ footer>p{
 	pointer-events:none;
 }
 
-#ddNav{
+#mainNav{
 	display:none;
+}
+
+#ddNav{
+	display:block;
+	max-width:20%;
 }
 
 .dropDownBtn{

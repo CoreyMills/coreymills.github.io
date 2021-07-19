@@ -1,25 +1,23 @@
 let slideMap=new Map();
-document.onreadystatechange=function(){
-    if (document.readyState==='complete'){
-		let containers=document.getElementsByClassName("ssContainer");
-		for(let i=0;i<containers.length;i++){
-			let key = i
-			slideMap.set(key,0);
-			let slides = containers[i].getElementsByClassName('ssMedia');
-			if(slides.length==0){continue;}
-			else{
-				for(let j=0;j<slides.length;j++){slides[j].style.display="none";}
-				if(slides.length>1){
-					let pBtn=document.createElement("a");pBtn.className="prev button";pBtn.onclick=function(){ChangeSlide(-1,key)};pBtn.innerText='\u276E';
-					let nBtn=document.createElement("a");nBtn.className="next button";nBtn.onclick=function(){ChangeSlide(1,key)};nBtn.innerText='\u276F';
-					containers[i].appendChild(pBtn);containers[i].appendChild(nBtn);
-				}
+function Init(){
+	let containers=document.getElementsByClassName("ssContainer");
+	for(let i=0;i<containers.length;i++){
+		let key = i
+		slideMap.set(key,0);
+		let slides = containers[i].getElementsByClassName('ssMedia');
+		if(slides.length==0){continue;}
+		else{
+			for(let j=0;j<slides.length;j++){slides[j].style.display="none";}
+			if(slides.length>1){
+				let pBtn=document.createElement("a");pBtn.className="prev button";pBtn.onclick=function(){ChangeSlide(-1,key)};pBtn.innerText='\u276E';
+				let nBtn=document.createElement("a");nBtn.className="next button";nBtn.onclick=function(){ChangeSlide(1,key)};nBtn.innerText='\u276F';
+				containers[i].appendChild(pBtn);containers[i].appendChild(nBtn);
 			}
-			ShowSlides(0,0,key);
-			containers[i].style.display = "block";
 		}
-		CheckVisibility();
+		ShowSlides(0,0,key);
+		containers[i].style.display = "block";
 	}
+	CheckVisibility();
 }
 function ChangeSlide(n,key){
 	let prevIndex=slideMap.get(key);
