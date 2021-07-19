@@ -35,83 +35,124 @@
 		</header>
 		<main>
 			<div class="sec">
-				<div><h2>Final Year Project<a class="githubProjectLink"href="https://github.com/CoreyMills/RayTracerSmall"><img src="Media/github.png"alt="Image Not Found"/></a></h2></div>
+				<div><h2>Final Year Project<a class="githubProjectLink"href="https://github.com/CoreyMills/FYP_Project"><img src="Media/github.png"alt="Image Not Found"/></a></h2></div>
 				<div class="flexContainer">
 					<div class="col">
-						<p>An Agent-Based Model Simulation which used Genetic Algorithms to test how optional traits and environmental factors affect the evolution of AI agents.</p> 
-						<p id="smt0"class="showMoreText">Text Here</p>
-						<div class="ShowMoreBtn"><a class="button"onclick="ShowMoreInfo('smt0',this)">Show More</a></div>
+						<p>An Agent-Based Model Simulation which uses a genetic algorithm to test how changing the traits and environmental factors affect the evolution of AI agents.</p>
+						<div id="smt0"class="showMoreText"><p>The simulation placed 40 agents against 40 enemies in a small "arena" for 60 seconds, 
+						i was then able to select a range of additional traits and evionmental factors which would affect the agents.<br><br>
+						My project focused on trying to find a pattern to how genetic algorithms evolve the agents and how genetic algorithms could be used more often within the gaming industry.<br><br>
+						Using a fitness formula of (time survived + number of attacks made), which favored surviving over dealing damage. 
+						The agents were found to perform better when given traits which would help them group together rather than try to kill the enemies first, in terms of both average fitness score and average survival rate.<br><br>
+						After testing i found the best genetic algorithm specifications were:</p><ul><li>Tournament selection</li><li>Simple elitism of 1 agent</li><li>1 point crossover</li>
+						<li>Crossover rate of 100%</li><li>Mutation rate of 20%</li></ul><p>Throughout my project i came to the conclusion that genetic algorithms could be used much more often 
+						wihtin the games industry both at within games to evolve the AI and as a method to properly balance the stats of enemies within video games before release.</p></div>
+						<div class="showMoreBtn"><a class="button"onclick="ShowMoreInfo('smt0',this)">Show More</a></div>
 					</div>
-					<div class="col ssContainer">
-						<!--<div class="ssMedia"><video src="Media/RaytracingOutput.mp4"controls autoplay playsinline mute loop preload="none">Video Not Found</video></div>-->
+					<div class="col">
+						<div class="ssContainer">
+							<div class="ssMedia"><video src="Media/RaytracingOutput.mp4"controls autoplay playsinline mute loop preload="none">Video Not Found</video></div>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="sec">
-				<div><h2>Group Engine/Game Development<a class="githubProjectLink"href="https://github.com/CoreyMills/RayTracerSmall"><img src="Media/github.png"alt="Image Not Found"/></a></h2></div>
+				<div><h2>Group Engine/Game Development<a class="githubProjectLink"href="https://github.com/mathewthill/RoguelikeEngine"><img src="Media/github.png"alt="Image Not Found"/></a></h2></div>
 				<div class="flexContainer">
 					<div class="col">
-						<p>Text Here</p> 
-						<p id="smt1"class="showMoreText">Text Here</p>
-						<div class="ShowMoreBtn"><a class="button"onclick="ShowMoreInfo('smt1',this)">Show More</a></div>
+						<p>In a team of originally 8 members. We planned, designed, and programmed a self-contained rogue-lite engine. Then used the engine to make a small game.</p>
+						<div id="smt1"class="showMoreText"><p>Within the team i took upon the role of programming the AI, weapon, and projectile classes for both the engine and game<br><br>
+						We decided to code basic AI enemies into the engine as all rogue-lite games have some form of enemies; meaning even a developer with no AI experience could make enemies using the engine.<br><br>
+						The engine was built using a component system and so all the AI, weapons, and projectiles are used by adding the relevant component to an object. 
+						Furthermore the majority of the methods which run the functionality and gameplay of my classes can be overriden giving future developers full control of the AI behaviour.<br><br>
+						I also programmed the resource manager which handles all audio files, texture files, and object pooling.<br><br>The engine included a range of features needed for a complete engine, such as:</p>
+						<ul><li>Component system</li><li>Collision manager</li><li>Camera manager</li><li>Input handling</li><li>Resource manager</li><li>Scene manager</li><li>Physics manager</li><li>Audio manager</li><li>Object manager</li><li>UI manager</li><li>Sprite rendering & animation</li></ul></div>
+						<div class="showMoreBtn"><a class="button"onclick="ShowMoreInfo('smt1',this)">Show More</a></div>
 					</div>
-					<div class="col ssContainer">
-						<!--<div class="ssMedia"><video src="Media/RaytracingOutput.mp4"controls autoplay playsinline mute loop preload="none">Video Not Found</video></div>-->
+					<div class="col">
+						<div class="ssContainer">
+							<div class="ssMedia"><video src="Media/RaytracingOutput.mp4"controls autoplay playsinline mute loop preload="none">Video Not Found</video></div>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="sec">
-				<div><h2>Tower Defense<a class="githubProjectLink"href="https://github.com/CoreyMills/RayTracerSmall"><img src="Media/github.png"alt="Image Not Found"/></a></h2></div>
+				<div><h2>Tower Defense<a class="githubProjectLink"href="https://github.com/CoreyMills/TowerDefense-1.31"><img src="Media/github.png"alt="Image Not Found"/></a></h2></div>
 				<div class="flexContainer">
 					<div class="col">
-						<p>Text Here</p>
-						<p id="smt2"class="showMoreText">Text Here</p>
-						<div class="ShowMoreBtn"><a class="button"onclick="ShowMoreInfo('smt2',this)">Show More</a></div>
+						<p>Single Problem solution found using a genetic algorithm </p>
+						<div id="smt2"class="showMoreText">
+							<p>Unlike the "Flappy Bird" project, this project required the genetic algorithm to find a solution to a single problem.<br><br>
+								The aim was to find a solution that could achieve a score of atleast 200 consistently, as seen in the video.<br><br>
+								After running a range of tests the best solution was produced when using the genetic algorithm specifications:</p>
+								<ul><li>100 Agents</li><li>40 generations</li><li>12 tower types and positions per agent chromosome</li><li>Ranked roulette selection</li>
+								<li>Single point crossover</li><li>Dynamic crossover/mutation rates</li><li>2 values mutated per mutation</li></ul></div>
+						<div class="showMoreBtn"><a class="button"onclick="ShowMoreInfo('smt2',this)">Show More</a></div>
 					</div>
-					<div class="col ssContainer">
-						<div class="ssMedia"><video src="Media/TowerDefense.mp4"controls autoplay playsinline mute loop preload="none">Video Not Found</video></div>
+					<div class="col">
+						<div class="ssContainer">
+							<div class="ssMedia"><video src="Media/TowerDefense.mp4"controls autoplay playsinline mute loop preload="none">Video Not Found</video></div>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="sec">
-				<div><h2>Evolutionary Flappy Bird<a class="githubProjectLink"href="https://github.com/CoreyMills/RayTracerSmall"><img src="Media/github.png"alt="Image Not Found"/></a></h2></div>
+				<div><h2>Evolutionary Flappy Bird<a class="githubProjectLink"href="https://github.com/CoreyMills/FlappyBird"><img src="Media/github.png"alt="Image Not Found"/></a></h2></div>
 				<div class="flexContainer">
 					<div class="col">
-						<p>Text Here</p>
-						<p id="smt3"class="showMoreText">Text Here</p>
-						<div class="ShowMoreBtn"><a class="button"onclick="ShowMoreInfo('smt3',this)">Show More</a></div>
+						<p>Training a neural network birds with a genetic algorithm, to find a multi-problem solution in C++.<br><br>Part of the final year AI module.</p>
+						<div id="smt3"class="showMoreText"><p>The aim of the project was to create a bird that could reach a score of 400. Using the provided framework I programmed a neural network which used a genetic algorithm to develop its weights and biases.<br><br>The neural network used:</p>
+						<ul><li>3 inputs</li><li>1 output</li><li>3 hidden layers</li><li>6 nodes per hidden layer</li></ul><p>The genetic algorithm used:</p>
+						<ul><li>Tournament selection</li><li>3 simple elitism agents</li><li>Odd/Even crossover</li><li>Crossover rate of 1</li><li>Mutation rate of 0.03</li></ul>
+						<p>The highest score achieved was 1840 on the 468<sup>th</sup> genertion.<br><br>The first video shows the trained bird reaching 500 and the second video shows a small clip of randomly weighted birds being trained</p></div>
+						<div class="showMoreBtn"><a class="button"onclick="ShowMoreInfo('smt3',this)">Show More</a></div>
 					</div>
-					<div class="col ssContainer">
-						<div class="ssMedia"><video src="Media/FlappyBird/FB_TrainedBirds.mp4"controls autoplay playsinline mute loop preload="none">Video Not Found</video></div>
-						<div class="ssMedia"><video src="Media/FlappyBird/FB_TrainingBirds.mp4"controls autoplay playsinline mute loop preload="none">Video Not Found</video></div>
+					<div class="col">
+						<div class="ssContainer">
+							<div class="ssMedia"><video src="Media/FlappyBird/FB_TrainedBirds.mp4"controls autoplay playsinline mute loop preload="none">Video Not Found</video></div>
+							<div class="ssMedia"><video src="Media/FlappyBird/FB_TrainingBirds.mp4"controls autoplay playsinline mute loop preload="none">Video Not Found</video></div>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="sec">
-				<div><h2>Chess Algorithm<a class="githubProjectLink"href="https://github.com/Silent-Lunatic/RayTracerSmall"><img src="Media/github.png"alt="Image Not Found"/></a></h2></div>
+				<div><h2>Chess Algorithm<a class="githubProjectLink"href="https://github.com/CoreyMills/Chess-2.0"><img src="Media/github.png"alt="Image Not Found"/></a></h2></div>
 				<div class="flexContainer">
 					<div class="col">
-						<p>Text Here</p>
-						<p id="smt4"class="showMoreText">Text Here</p>
-						<div class="ShowMoreBtn"><a class="button"onclick="ShowMoreInfo('smt4',this)">Show More</a></div>
+						<p>Chess Algorithm using C++, as part of the final year AI module.</p>
+						<div id="smt4"class="showMoreText"><p>Given a basic framework which could be used to play chess, i added all the AI elements which make decisions using the mini-max algorithm.<br><br>
+						The project involved using a variety of researched techniques to create an intelligent chess algorithm which could make decisions at run-time in a "Rapid" chess format. Some of the techniques used are:</p>
+						<ul><li>Minimax</li><li>Alpha-Beta Pruning</li><li>Removing the minimax tree creation</li><li>Framework optimizations</li><li>Playbooks</li><li>Board Evaluation</li>
+						<ul><li>Board position values</li><li>AI playing styles</li></ul></ul>
+						<p>Sorting the first depth of the minimax tree was also tested, however at the low depth the algorithm runs, there was no improvement.<br><br>
+						The chess algorithm is able to run at a depth of 4 where almost all decisions can be made in under a minute.<br><br> Each node takes around 0.0007 seconds to evaluate using a Ryzen 7 2700x.</p></div>
+						<div class="showMoreBtn"><a class="button"onclick="ShowMoreInfo('smt4',this)">Show More</a></div>
 					</div>
-					<div class="col ssContainer">
-						<div class="ssMedia"><video src="Media/Chess/ChessAnimated.mp4"controls autoplay playsinline mute loop preload="none">Video Not Found</video></div>
-						<div class="ssMedia"><video src="Media/Chess/ChessAlgorithm.mp4"controls autoplay playsinline mute loop preload="none">Video Not Found</video></div>
+					<div class="col">
+						<div class="ssContainer">
+							<div class="ssMedia"><video src="Media/Chess/ChessAnimated.mp4"controls autoplay playsinline mute loop preload="none">Video Not Found</video></div>
+							<div class="ssMedia"><video src="Media/Chess/ChessAlgorithm.mp4"controls autoplay playsinline mute loop preload="none">Video Not Found</video></div>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="sec">
-				<div><h2>Flocking Simulation<a class="githubProjectLink"href="https://github.com/CoreyMills/RayTracerSmall"><img src="Media/github.png"alt="Image Not Found"/></a></h2></div>
+				<div><h2>Flocking Simulation<a class="githubProjectLink"href="https://github.com/CoreyMills/Flocking-Boids"><img src="Media/github.png"alt="Image Not Found"/></a></h2></div>
 				<div class="flexContainer">
 					<div class="col">
-						<p>Text Here</p>
-						<p id="smt5"class="showMoreText">Text Here</p>
-						<div class="ShowMoreBtn"><a class="button"onclick="ShowMoreInfo('smt5',this)">Show More</a></div>
+						<p>Flocking Simulation using C++, as part of the final year AI module.</p>
+						<div id="smt5"class="showMoreText">
+							<p>Taking the basic framework which rendered square objects i added the implemented the physics-based movement for the boids(blue) and predator(red).<br><br>
+							The boids use the flocking methods (Seperation,Alignment, and Cohesion) created by Craig Reynolds to move around the scene. Various method weighting were used to create different behaviours.<br><br>
+							Within this simulation the boids also gain a short speed boost when they see the shark using peripheral vision.<br><br>The predator does not use flocking methods, though it uses similar steering behaviours and the same method for finding nearby boids.</p>
+						</div>
+						<div class="showMoreBtn"><a class="button"onclick="ShowMoreInfo('smt5',this)">Show More</a></div>
 					</div>
-					<div class="col ssContainer">
-						<div class="ssMedia"><video src="Media/Flocking/Flocking111.mp4"controls autoplay playsinline mute loop preload="none">Video Not Found</video></div>	
-						<div class="ssMedia"><video src="Media/Flocking/Flocking311.mp4"controls autoplay playsinline mute loop preload="none">Video Not Found</video></div>
+					<div class="col">
+						<div class="ssContainer">
+							<div class="ssMedia"><video src="Media/Flocking/Flocking111.mp4"controls autoplay playsinline mute loop preload="none">Video Not Found</video></div>	
+							<div class="ssMedia"><video src="Media/Flocking/Flocking311.mp4"controls autoplay playsinline mute loop preload="none">Video Not Found</video></div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -119,14 +160,18 @@
 				<div><h2>Low-Level Game Programming<a class="githubProjectLink"href="https://github.com/CoreyMills/RayTracerSmall"><img src="Media/github.png"alt="Image Not Found"/></a></h2></div>
 				<div class="flexContainer">
 					<div class="col">
-						<p>Final Year.<br><br>Created using C++.<br><br>Given a framework that used raytracing to render spheres. I implemented a range of techniques to manage memory and improve processing time. I added-
-							<ul><li>Threading</li><li>Animations</li><li>Heap Management</li><li>Porting to Linux - VMWare Ubuntu</li></ul>
-							​My additions took the framework from a completion time of over 100 seconds to 8-10 seconds (Windows). 7-9 seconds (Linux).<br><br>At 640x480 resolution.</p> 
-						<p id="smt6"class="showMoreText">Text Here</p>
-						<div class="ShowMoreBtn"><a class="button"onclick="ShowMoreInfo('smt6',this)">Show More</a></div>
+						<p> Final year low-level programming module, using C++ and the provided raytracer framework.</p>
+						<div id="smt6"class="showMoreText">
+							<p>Using the framework which was able to use raytracing to render spheres.<br><br>I implemented a range of techniques to manage memory and improve processing time.</p>
+							<ul><li>Threading</li><li>Animations</li><li>Heap Management</li><li>Low-level Debugging</li><li>Visual Studio Profiling</li><li>Porting to Linux - VMWare Ubuntu</li></ul>
+							<p>My additions took the framework from a completion time of over 100 seconds to 8-10 seconds (Windows). 7-9 seconds (Linux).<br><br>At 640x480 resolution, using a Ryzen 7 2700x.</p>
+						</div>
+						<div class="showMoreBtn"><a class="button"onclick="ShowMoreInfo('smt6',this)">Show More</a></div>
 					</div>
-					<div class="col ssContainer">
-						<div class="ssMedia"><video src="Media/RaytracingOutput.mp4"controls autoplay playsinline mute loop preload="none">Video Not Found</video></div>
+					<div class="col">
+						<div class="ssContainer">
+							<div class="ssMedia"><video src="Media/RaytracingOutput.mp4"controls autoplay playsinline mute loop preload="none">Video Not Found</video></div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -138,12 +183,14 @@
 						<div id="smt7"class="showMoreText"><p>The project included taking a variety of AI techniques to create an efficient self-contained tank AI.<br><br>
 						Such as:</p><ul><li>FSM & FuSM decision making</li><li>DRS pathfinding</li><li>Steering behaviours</li>
 						<ul><li>Seek</li><li>Arrive</li><li>Pursuit</li><li>Obstacle avoidance</li><li>Etc</li></ul></ul></div>
-						<div class="ShowMoreBtn"><a class="button"onclick="ShowMoreInfo('smt7',this)">Show More</a></div>
+						<div class="showMoreBtn"><a class="button"onclick="ShowMoreInfo('smt7',this)">Show More</a></div>
 					</div>
-					<div class="col ssContainer">
-						<div class="ssMedia"><iframe title="YouTube video player"src="https://www.youtube-nocookie.com/embed/Pnzte7h22jw?rel=0&autoplay=1&mute=1&enablejsapi=1"allowfullscreen></iframe></div>
-						<div class="ssMedia"><iframe title="YouTube video player"src="https://www.youtube-nocookie.com/embed/ca46KjZbyHg?rel=0&autoplay=1&mute=1&enablejsapi=1"allowfullscreen></iframe></div>
-						<div class="ssMedia"><iframe title="YouTube video player"src="https://www.youtube-nocookie.com/embed/tYCHcB5eH_A?rel=0&autoplay=1&mute=1&enablejsapi=1"allowfullscreen></iframe></div>
+					<div class="col">
+						<div class="ssContainer">
+							<div class="ssMedia"><iframe title="YouTube video player"src="https://www.youtube-nocookie.com/embed/Pnzte7h22jw?rel=0&autoplay=1&mute=1&enablejsapi=1"allowfullscreen></iframe></div>
+							<div class="ssMedia"><iframe title="YouTube video player"src="https://www.youtube-nocookie.com/embed/ca46KjZbyHg?rel=0&autoplay=1&mute=1&enablejsapi=1"allowfullscreen></iframe></div>
+							<div class="ssMedia"><iframe title="YouTube video player"src="https://www.youtube-nocookie.com/embed/tYCHcB5eH_A?rel=0&autoplay=1&mute=1&enablejsapi=1"allowfullscreen></iframe></div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -156,14 +203,16 @@
 						<ul><li>Particle system (fire, snow, rain)</li><li>Partial seperating axis theorem</li><li>AABB collision</li><li>Bounding box collision</li>
 						<li>Sphere collision</li><li>Collision resolution</li><li>Rigidbody physics</li><li>OctTree for game objects</li></ul>
 						<p>Many of the techniques/features listed can be seen in the videos of the slideshow.</p></div>
-						<div class="ShowMoreBtn"><a class="button"onclick="ShowMoreInfo('smt8',this)">Show More</a></div>
+						<div class="showMoreBtn"><a class="button"onclick="ShowMoreInfo('smt8',this)">Show More</a></div>
 					</div>
-					<div class="col ssContainer">
-						<div class="ssMedia"><video src="Media/PhysicsEngine/SnowParticles.mp4"controls autoplay playsinline mute loop preload="none">Video Not Found</video> </div>
-						<div class="ssMedia"><video src="Media/PhysicsEngine/FireParticles.mp4"controls autoplay playsinline mute loop preload="none">Video Not Found</video></div>
-						<div class="ssMedia"><video src="Media/PhysicsEngine/RainParticles.mp4"controls autoplay playsinline mute loop preload="none">Video Not Found</video></div>
-						<div class="ssMedia"><video src="Media/PhysicsEngine/PhysicsCollision.mp4"controls autoplay playsinline mute loop preload="none">Video Not Found</video></div>
-						<div class="ssMedia"><img src="Media/PhysicsEngine/OctTree.jpg"alt="Image Not Found"/></div>
+					<div class="col">
+						<div class="ssContainer">
+							<div class="ssMedia"><video src="Media/PhysicsEngine/SnowParticles.mp4"controls autoplay playsinline mute loop preload="none">Video Not Found</video> </div>
+							<div class="ssMedia"><video src="Media/PhysicsEngine/FireParticles.mp4"controls autoplay playsinline mute loop preload="none">Video Not Found</video></div>
+							<div class="ssMedia"><video src="Media/PhysicsEngine/RainParticles.mp4"controls autoplay playsinline mute loop preload="none">Video Not Found</video></div>
+							<div class="ssMedia"><video src="Media/PhysicsEngine/PhysicsCollision.mp4"controls autoplay playsinline mute loop preload="none">Video Not Found</video></div>
+							<div class="ssMedia"><img src="Media/PhysicsEngine/OctTree.jpg"alt="Image Not Found"/></div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -176,10 +225,12 @@
 						<ul><li>Phong shader</li><li>Blur shader</li><li>Directional lighting</li><li>.OBJ loaded 3D/2D models</li><li>Texturing</li><li>Transparency</li>
 						<li>Culling</li><li>Skybox</li><li>Render-to-texture</li><li>Object movement/rotation</li><li>Billboarding</li><li>Keyboard/mouse input</li></ul>
 						<p>Many of these techniques can be seen in the video.</p></div>
-						<div class="ShowMoreBtn"><a class="button"onclick="ShowMoreInfo('smt9',this)">Show More</a></div>
+						<div class="showMoreBtn"><a class="button"onclick="ShowMoreInfo('smt9',this)">Show More</a></div>
 					</div>
-					<div class="col ssContainer">
-						<div class="ssMedia"><iframe title="YouTube video player"src="https://www.youtube-nocookie.com/embed/s6B4YX9Q6J4?rel=0&autoplay=1&mute=1&enablejsapi=1"allowfullscreen></iframe></div>
+					<div class="col">
+						<div class="ssContainer">
+							<div class="ssMedia"><iframe title="YouTube video player"src="https://www.youtube-nocookie.com/embed/s6B4YX9Q6J4?rel=0&autoplay=1&mute=1&enablejsapi=1"allowfullscreen></iframe></div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -194,12 +245,14 @@
 						<ul><li>packet handling</li><li>TCP</li><li>UDP</li><li>Windows forms/UI</li><li>2D animation</li>
 						<li>threading</li><li>thread-safe techniques</li><li>concurrent dictionaries</li></ul>
 						<p>The clients were able to join the game queue, communicate publicly/privately, and challenge each other</p></div>
-						<div class="ShowMoreBtn"><a class="button"onclick="ShowMoreInfo('smt10',this)">Show More</a></div>
+						<div class="showMoreBtn"><a class="button"onclick="ShowMoreInfo('smt10',this)">Show More</a></div>
 					</div>
-					<div class="col ssContainer">					
-						<div class="ssMedia"><img src="Media/Battleships/ConcurrentGames.jpg"alt="Image Not Found"/></div>
-						<div class="ssMedia"><img src="Media/Battleships/Spectating.jpg"alt="Image Not Found"/></div>						
-						<div class="ssMedia"><img src="Media/Battleships/ChallengeRequest.jpg"alt="Image Not Found"/></div>
+					<div class="col">
+						<div class="ssContainer">
+							<div class="ssMedia"><img src="Media/Battleships/ConcurrentGames.jpg"alt="Image Not Found"/></div>
+							<div class="ssMedia"><img src="Media/Battleships/Spectating.jpg"alt="Image Not Found"/></div>						
+							<div class="ssMedia"><img src="Media/Battleships/ChallengeRequest.jpg"alt="Image Not Found"/></div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -211,10 +264,12 @@
 						<p id="smt11"class="showMoreText">For the module I produced two small mini games which parodied "Mario" and "GravityGuy".<br><br>
 						The games included many of the basic necessities for a video game such as simple AI, Collision detection/response, 2D animation.<br><br>
 						On top of the basic functionality the "GravityGuy" game also used modular levels from text files and gave a multiplayer option.</p>
-						<div class="ShowMoreBtn"><a class="button"onclick="ShowMoreInfo('smt11',this)">Show More</a></div>
+						<div class="showMoreBtn"><a class="button"onclick="ShowMoreInfo('smt11',this)">Show More</a></div>
 					</div>
-					<div class="col ssContainer">
-						<div class="ssMedia"><video src="Media/Mario&GravityGuy.mp4"controls autoplay playsinline mute loop preload="none">Video Not Found</video></div>
+					<div class="col">
+						<div class="ssContainer">
+							<div class="ssMedia"><video src="Media/Mario&GravityGuy.mp4"controls autoplay playsinline mute loop preload="none">Video Not Found</video></div>
+						</div>
 					</div>
 				</div>
 			</div>

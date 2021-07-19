@@ -12,8 +12,7 @@ document.onreadystatechange=function(){
 				if(slides.length>1){
 					let pBtn=document.createElement("a");pBtn.className="prev button";pBtn.onclick=function(){ChangeSlide(-1,key)};pBtn.innerText='\u276E';
 					let nBtn=document.createElement("a");nBtn.className="next button";nBtn.onclick=function(){ChangeSlide(1,key)};nBtn.innerText='\u276F';
-					containers[i].appendChild(pBtn);
-					containers[i].appendChild(nBtn);
+					containers[i].appendChild(pBtn);containers[i].appendChild(nBtn);
 				}
 			}
 			ShowSlides(0,0,key);
