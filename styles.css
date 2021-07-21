@@ -104,7 +104,7 @@ footer>p{
 	outline-style:solid;
 	outline-color:#FFFFFF;
 	outline-width:1px;
-	min-width:500px;
+	min-width:50vh;
 	overflow:hidden;
 }
 
@@ -114,11 +114,10 @@ footer>p{
 	flex:1;
 }
 
-.flexContainer>.col{
+.col{
 	flex:1;
-	width:max-content;
 	min-width:500px;
-	max-width:100%;
+	width:max-content;
 	margin:0;
 }
 

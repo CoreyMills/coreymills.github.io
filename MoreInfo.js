@@ -1,5 +1,4 @@
-function ShowMoreInfo(paraID,showMoreBtn){
-	let para=document.getElementById(paraID);
-	if(window.getComputedStyle(para).display==="none"){showMoreBtn.innerText="Show Less";setTimeout(function(){para.style.display="block";},100);} 
-	else{showMoreBtn.innerText="Show More";setTimeout(function(){para.style.display="none";},100);}
-}
+$('.showMoreBtn').click(function() {let $smText=$(this).siblings(".showMoreText");
+	if($smText.is(":Hidden")){$(this).children().text('Show Less');setTimeout(function(){$smText.show();},100);} 
+	else{$(this).children().text('Show More');setTimeout(function(){$smText.hide()},100);}
+});
