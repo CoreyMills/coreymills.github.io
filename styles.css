@@ -111,13 +111,12 @@ footer>p{
 .flexContainer{
 	display:flex;
 	flex-wrap:wrap;
-	flex:1;
+	flex:auto;
 }
 
 .col{
 	flex:1;
 	min-width:500px;
-	width:max-content;
 	margin:0;
 }
 
