@@ -40,15 +40,15 @@ footer{
 footer>p{
 	text-align:center;
 }
+#currentPage{
+	color:#FF8C00;
+	pointer-events:none;
+}
 #mainNav li{
 	display:inline-block;
 	position:relative;
 	padding:0 2%;
 	margin:0 0.5%;
-}
-#mainNav li>#currentPage{
-	color:#FF8C00;
-	pointer-events:none;
 }
 #mainNav{
 	display:none;
@@ -160,6 +160,17 @@ footer>p{
 	width:50px;
 }
 .githubProjectLink>img.hover{background-color:#FF8C00;}
+.externalLink{
+	color:#FFFFFF;
+	font-size:1.2em;
+}
+.SplashDamageLink{cursor:pointer;}
+.SplashDamageLink>img{
+	position:absolute;
+	padding:0 10px;
+	width:50px;
+}
+.SplashDamageLink>img.hover{background-color:#FF8C00;}
 .externalLink{
 	color:#FFFFFF;
 	font-size:1.2em;

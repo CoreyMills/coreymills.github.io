@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet"href="styles.css"/>
+		<meta charset="UTF-8">
+		<meta name="description"content="Portfolio website">
+		<meta name="author"content="Corey Mills">
+		<meta name="keywords"content="Corey Mills,Portfolio,Programmer,Computer Games Programmer">
+		<meta name="viewport"content="width=device-width,initial-scale=1">
+		<title>Corey Mills - Portfolio</title>
+	</head>
+	<body>
+		<header>
+			<h1>Game Jam Projects</h1>
+			<nav>
+				<div id="mainNav">
+					<ul>
+						<li><a class="button"href="index.html">About Me</a></li>
+						<li><a id="currentPage"class="button"href="Industry_Page.html">Industry Projects</a></li>
+						<li><a class="button"href="Education_Page.html">Education Projects</a></li>
+						<li><a class="button"href="GameJam_Page.html">Game Jam Projects</a></li>
+						<li><a class="button"href="Personal_Page.html">Personal Projects</a></li>
+						<li><a class="button"href="Contact_Page.html">Contact</a></li>
+					</ul>
+				</div>
+				<div id="ddNav"class="dropDown">
+					<h2 class="dropDownBtn"ontouchstart="FlipDropDownState()">&#8801 </h2>
+					<div class="dropDownContent">
+						<a class="button"href="index.html">About Me</a>
+						<a id="currentPage"class="button"href="Industry_Page.html">Industry Projects</a>
+						<a class="button"href="Education_Page.html">Education Projects</a>
+						<a class="button"href="GameJam_Page.html">Game Jam Projects</a>
+						<a class="button"href="Personal_Page.html">Personal Projects</a>
+						<a class="button"href="Contact_Page.html">Contact</a>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<div class="sec">
+				<div><h2>Project Astrid<a class="SplashDamageLink"href="https://www.splashdamage.com/news/announcing-project-astrid/"><img src="Media/SplashDamage/SD_Logo.png"alt="Image Not Found"/></a></h2></div>
+				<div class="flexContainer">
+					<div class="col">
+						<p>Intro.<br><br></p>
+						<p class="showMoreText">description.</p>
+						<div class="showMoreBtn"><a class="button"onclick="ShowMoreInfo('smt0',this)">Show More</a></div>
+					</div>
+					<div class="col">
+						<div class="ssContainer">		
+							<div class="ssMedia"><img src="Media/SplashDamage/ProjectAstrid.jpg"alt="Image Not Found"/></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sec">
+				<div><h2>Undisclosed Project<a class="SplashDamageLink"href="https://www.splashdamage.com/games/"><img src="Media/SplashDamage/SD_Logo.png"alt="Image Not Found"/></a></h2></div>
+				<div class="flexContainer">
+					<div class="col">
+						<p>Intro.<br><br></p>
+						<p class="showMoreText">description.</p>
+						<div class="showMoreBtn"><a class="button"onclick="ShowMoreInfo('smt1',this)">Show More</a></div>
+					</div>
+					<div class="col">
+						<div class="ssContainer">
+							<div class="ssMedia"><img src="Media/SplashDamage/Splash_Damage.svg"alt="Image Not Found"/></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer><p>Copyright &#169; Corey Mills 2023</p></footer>
+	</body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script onload="UpdateNav();"async src="NavMenu.js"></script>
+<script onload="Init();"async src="SlideShow.js"></script>
+<script src="MoreInfo.js"></script>
+<script src="TopScript.js"></script>
